@@ -1,5 +1,3 @@
-function calculateTotal(price, tax) {
-  return price + (price * tax);
+function applyDiscount(price, discount) {
+  return price - (price * discount);
 }
-
-module.exports = { calculateTotal };
