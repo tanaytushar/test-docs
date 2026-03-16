@@ -1,0 +1,5 @@
+function processPayment(amount, currency) {
+  return { amount: amount, currency: currency };
+}
+
+module.exports = { processPayment };
