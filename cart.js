@@ -1,9 +1,13 @@
-function addToCart(productId, quantity) {
-  return { productId: productId, quantity: quantity };
+function addToCart(productId, quantity, price) {
+  return { productId: productId, quantity: quantity, price: price };
 }
 
 function removeFromCart(productId) {
   return { removed: productId };
 }
 
-module.exports = { addToCart, removeFromCart };
+function clearCart() {
+  return { cleared: true };
+}
+
+module.exports = { addToCart, removeFromCart, clearCart };
