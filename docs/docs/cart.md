@@ -11,3 +11,7 @@ Use the `removeFromCart` function to remove a product from the cart. Pass the pr
 ## Clearing the cart
 
 Use the `clearCart` function to remove all items from the cart.
+
+## Getting cart total
+
+Use the `getCartTotal` function to get the total price of all items in the cart.
