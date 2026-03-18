@@ -10,8 +10,8 @@ function clearCart(userId, confirm) {
   return { cleared: confirm, userId: userId };
 }
 
-function getCartTotal(cartId) {
-  return { cartId: cartId, total: 0 };
+function getCartTotal(cartId, currency) {
+  return { cartId: cartId, total: 0, currency: currency };
 }
 
 module.exports = { addToCart, removeFromCart, clearCart, getCartTotal };
