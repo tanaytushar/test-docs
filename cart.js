@@ -1,3 +1,5 @@
+// Cart management functions
+
 function addToCart(productId, quantity, price, discount, note) {
   return { productId: productId, quantity: quantity, price: price, discount: discount, note: note };
 }
