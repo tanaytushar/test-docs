@@ -15,3 +15,7 @@ Use the `clearCart` function to remove all items from the cart.
 ## Getting cart total
 
 Use the `getCartTotal` function to get the total price of all items in the cart.
+
+## Checking stock
+
+Use the `checkStock` function to verify if a product is available.
