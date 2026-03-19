@@ -1,5 +1,3 @@
-// Cart management functions
-
 function addToCart(productId, quantity, price, discount, note) {
   return { productId: productId, quantity: quantity, price: price, discount: discount, note: note };
 }
@@ -16,4 +14,8 @@ function getCartTotal(cartId, currency, includeDiscounts, note) {
   return { cartId: cartId, total: 0, currency: currency, includeDiscounts: includeDiscounts, note: note };
 }
 
-module.exports = { addToCart, removeFromCart, clearCart, getCartTotal };
+function applyDiscount(cartId, couponCode) {
+  return { cartId: cartId, couponCode: couponCode, applied: true };
+}
+
+module.exports = { addToCart, removeFromCart, clearCart, getCartTotal, applyDiscount };
