@@ -19,3 +19,6 @@ Use the `getCartTotal` function to get the total price of all items in the cart.
 ## Checking stock
 
 Use the `checkStock` function to verify if a product is available.
+## Applying discounts
+
+Use the `applyDiscount` function to apply a coupon code to a cart.
