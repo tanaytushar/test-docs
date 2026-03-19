@@ -14,8 +14,8 @@ function getCartTotal(cartId, currency, includeDiscounts, note) {
   return { cartId: cartId, total: 0, currency: currency, includeDiscounts: includeDiscounts, note: note };
 }
 
-function applyDiscount(cartId, couponCode) {
-  return { cartId: cartId, couponCode: couponCode, applied: true };
+function applyDiscount(cartId, couponCode, userId) {
+  return { cartId: cartId, couponCode: couponCode, userId: userId, applied: true };
 }
 
 module.exports = { addToCart, removeFromCart, clearCart, getCartTotal, applyDiscount };
